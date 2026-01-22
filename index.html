@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flexbox Dashboard Layout</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Dashboard container */
+    .dashboard {
+      width: 1200px;
+      height: 600px;
+      background: #1a1a1a;
+      border-radius: 20px;
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 60px;
+      background: #0f0f0f;
+      border-radius: 12px;
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Top row */
+    .top-row {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .top-cards {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+
+    .small-card {
+      flex: 1;
+      height: 90px;
+      background: #222;
+      border-radius: 12px;
+    }
+
+    .floating-card {
+      width: 120px;
+      height: 120px;
+      background: purple;
+      border-radius: 16px;
+    }
+
+    /* Middle row */
+    .middle-row {
+      height: 120px;
+      background: #222;
+      border-radius: 12px;
+    }
+
+    /* Bottom row */
+    .bottom-row {
+      flex: 1;
+      display: flex;
+      gap: 20px;
+    }
+
+    .bottom-left,
+    .bottom-right {
+      flex: 1;
+      background: #222;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="dashboard">
+
+    <aside class="sidebar"></aside>
+
+    <div class="main">
+
+      <div class="top-row">
+        <div class="top-cards">
+          <div class="small-card"></div>
+          <div class="small-card"></div>
+          <div class="small-card"></div>
+        </div>
+
+        <div class="floating-card"></div>
+      </div>
+
+      <div class="middle-row"></div>
+
+      <div class="bottom-row">
+        <div class="bottom-left"></div>
+        <div class="bottom-right"></div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
